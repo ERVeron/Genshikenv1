@@ -1,0 +1,274 @@
+/* COLORS 
+principal: #ffff
+secundario: #ff1500
+detalles: #0077cc
+*/
+
+@font-face {
+  font-family: "Roboto Condensed", sans-serif;
+  src: url(../fonts/RobotoCondensed-Regular.ttf);
+}
+
+h2 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+main {
+  margin: 0px 200px 0px 200px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+}
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #ffff;
+  z-index: 999;
+}
+
+/* Barra de navegacion */
+.navbar {
+  padding: 2rem;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item {
+  margin: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ff1500;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: #0077cc;
+}
+
+/* Noticias */
+
+.noticias-container {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.noticia {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.noticia img {
+  max-width: 100%;
+  height: auto;
+}
+
+.noticia:hover img {
+  opacity: 0.2;
+}
+
+.noticia:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+section {
+  gap: 15px;
+}
+
+section strong {
+  color: #ff1500;
+}
+
+section a:hover {
+  color: #0077cc;
+}
+
+section p {
+  text-decoration: none;
+}
+
+/* Forms */
+.formPoll {
+  display: inline-block;
+  width: 20%;
+}
+
+.formMsg {
+  display: inline-block;
+  margin-left: 40%;
+  margin-bottom: 5%;
+  width: 20%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Button Up */
+.buttonUp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
+}
+strong {
+  color: #ff1500;
+}
+
+/* FOOTER */
+footer {
+  margin: 0px;
+  background-color: #0077cc;
+  position: relative;
+}
+
+.textFooter {
+  color: azure;
+  background-color: #ff1500;
+}
+.socialIcons a i {
+  color: white;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+footer {
+  min-height: 250px;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: white;
+  border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i {
+  color: black;
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: black;
+  padding: 20px;
+}
+
+/* CSS Noticias */
+.header-news {
+  position: relative;
+  width: 100%;
+  margin: 0 auto; /* Centrar el contenido horizontalmente */
+}
+
+.image-news {
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
+
+.text-news {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 54px;
+  text-align: center;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px; /* Ancho máximo para el diseño responsive */
+}
+
+.badges-container {
+  position: absolute;
+  top: 15px;
+  left: 100px;
+}
+
+.badge {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.news-content {
+  margin: 5px;
+  padding: 5px;
+}
+
+.news-content {
+  font-family: Roboto;
+  font-size: 19px;
+  line-height: 26px;
+  font-weight: 300;
+  text-align: justify;
+}
+/* Adaptable (Responsivo) */
+@media screen and (max-width: 991px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .text-news {
+    font-size: 25px;
+  }
+  .badge {
+    font-size: 12px;
+  }
+}
