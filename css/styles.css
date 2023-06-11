@@ -94,15 +94,6 @@ header {
   display: flex;
 }
 
-/* Forms */
-.formPoll {
-  display: inline-block;
-  width: 20%;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 0px 40px 0px;
-}
-
 a {
   text-decoration: none;
 }
