@@ -1,0 +1,15 @@
+/* Adaptable (Responsivo) */
+@media screen and (max-width: 991px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .text-news {
+    font-size: 25px;
+  }
+  .badge {
+    font-size: 12px;
+  }
+}

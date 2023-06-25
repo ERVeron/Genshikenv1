@@ -1,0 +1,23 @@
+/* Barra de navegacion */
+.navbar {
+  padding: 2rem;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item {
+  margin: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: $secundario;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: $detalles;
+}

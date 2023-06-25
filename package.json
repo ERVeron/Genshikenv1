@@ -1,0 +1,7 @@
+{
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch scss:css"
+  }
+}
